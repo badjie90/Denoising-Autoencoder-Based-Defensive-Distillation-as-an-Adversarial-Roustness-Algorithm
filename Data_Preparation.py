@@ -13,6 +13,16 @@ with open(os.path.join(dataset_dir, "train.p"), "rb") as f:
 
 x_train, y_train = train_data["features"], train_data["labels"]
 
+
+
+# Load the validation set
+with open(os.path.join(dataset_dir, "valid.p"), "rb") as f:
+    valid_data = pickle.load(f)
+
+x_val, y_val = valid_data["features"], valid_data["labels"]
+
+
+
 # Load the testing set
 with open(os.path.join(dataset_dir, "test.p"), "rb") as f:
     test_data = pickle.load(f)
