@@ -2,7 +2,7 @@
 
 Contained within this repository is a defensive distillation project written in the Python programming language. The architecture of this project is such that it is adaptable and can be leverage to robustify any deep neural network, with any image dataset.
 
-To make use of this project, a sequential execution of the following files is necessary: Data_Preparation.py, Teacher_model.py, Distillation_model.py, Student_model.py, Evaluate_distilled_model_1.py, Ensemble_adversarial_attacks.py, and Evaluate_distilled_model_2.py.
+To make use of this project and make easy for yourself, please use the Defensive_distillation.ipynb
 
 The original concept of defensive distillation as an adversarial robustness algorithm was first introduced by Nicolas Papernot of The Pennsylvania State University, in a paper accessible via this [link](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Distillation+as+a+Defense+to+Adversarial+Perturbations+against+Deep+Neural+Networks&btnG=). However, we have made a notable advancement to this method by addressing the issue in which attackers could reverse-engineer both models to discover fundamental exploits. Moreover, we have implemented training data filtering techniques to mitigate poisoning attacks, in which the initial training database is corrupted by a malicious actor. 
 
